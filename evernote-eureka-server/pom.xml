@@ -4,32 +4,22 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>melbourneit</groupId>
-	<artifactId>spring-boot-microservice</artifactId>
+	<artifactId>evernote-eureka-server</artifactId>
 
-	<name>spring-boot-microservice</name>
+	<name>spring-boot-eureka</name>
 	<description>Use microservice in Spring Boot</description>
 	<version>1.1.0.RELEASE</version>
-	<packaging>pom</packaging>
-
+	<packaging>jar</packaging>
 
 	<parent>
-		<groupId>org.springframework.cloud</groupId>
-		<artifactId>spring-cloud-starter-parent</artifactId>
-		<version>Brixton.RELEASE</version>
+		<groupId>melbourneit</groupId>
+		<artifactId>spring-boot-microservice</artifactId>
+		<version>1.1.0.RELEASE</version>
 	</parent>
-
 	<properties>
 		<!-- Stand-alone RESTFul application for testing only -->
-		<start-class>io.pivotal.microservices.services.Main</start-class>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
+		<start-class>io.pivotal.microservices.services.registration.RegistrationServer</start-class>
 	</properties>
-
-<modules>
-        <module>evernote-eureka-server</module>
-        <module>evernote-account-service</module>
-    </modules>
-
 	<dependencies>
 		<dependency>
 			<!-- Setup Spring Boot -->

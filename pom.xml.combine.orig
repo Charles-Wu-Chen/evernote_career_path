@@ -9,8 +9,7 @@
 	<name>spring-boot-microservice</name>
 	<description>Use microservice in Spring Boot</description>
 	<version>1.1.0.RELEASE</version>
-	<packaging>pom</packaging>
-
+	<packaging>jar</packaging>
 
 	<parent>
 		<groupId>org.springframework.cloud</groupId>
@@ -24,11 +23,6 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
-
-<modules>
-        <module>evernote-eureka-server</module>
-        <module>evernote-account-service</module>
-    </modules>
 
 	<dependencies>
 		<dependency>
